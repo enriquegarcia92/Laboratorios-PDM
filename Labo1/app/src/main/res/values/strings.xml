@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Labo1</string>
+    <string name="text_bienvenido">Bienvenido a</string>
+    <string name="text_cadena_materia">Programación de Dispositivos Móviles</string>
+</resources>
