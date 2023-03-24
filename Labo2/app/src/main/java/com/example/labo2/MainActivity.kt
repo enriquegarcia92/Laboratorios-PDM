@@ -71,11 +71,11 @@ class MainActivity : AppCompatActivity() {
     private fun validateIntput(weight: String?, height:String?): Boolean{
         return when{
             weight.isNullOrEmpty()->{
-                Toast.makeText(this,"Weight is empty",Toast.LENGTH_SHORT)
+                Toast.makeText(this,"Weight is empty",Toast.LENGTH_SHORT).show()
                 return false
             }
             height.isNullOrEmpty()->{
-                Toast.makeText(this,"Weight is empty",Toast.LENGTH_SHORT)
+                Toast.makeText(this,"Height is empty",Toast.LENGTH_SHORT).show()
                 return false
             }
             else -> true
