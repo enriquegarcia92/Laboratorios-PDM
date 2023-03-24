@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="small_gap">4dp</dimen>
+    <dimen name="main_text_size">24sp</dimen>
+    <dimen name="medium_gap">10dp</dimen>
+    <dimen name="conrer_size">20dp</dimen>
+    <dimen name="elevation_size">15dp</dimen>
+    <dimen name="big_gap">24dp</dimen>
+    <dimen name="big_size">24sp</dimen>
+    <dimen name="layout_cero">0dp</dimen>
+    <dimen name="extra_big_text">60sp</dimen>
+    <dimen name="mid_size_text">32sp</dimen>
+</resources>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Labo2</string>
+    <string name="bmi_value">BMI</string>
+    <string name="weight_label">Weight</string>
+    <string name="height_label">Height</string>
+    <string name="cm_label">Cm</string>
+    <string name="kg_label">Kg</string>
+    <string name="calculate_text">Calculate</string>
+</resources>
