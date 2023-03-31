@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Labo3</string>
+    <string name="cantidad_dinero_text">Cantidad de dinero</string>
+    <string name="default_money">0</string>
+    <string name="five_cent_text">$0.05</string>
+    <string name="ten_cent_text">$0.10</string>
+    <string name="quarter_text">$0.25</string>
+    <string name="dollar_text">$1.00</string>
+</resources>
