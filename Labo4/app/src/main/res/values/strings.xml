@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Labo4</string>
+    <string name="insert_info_text">Rellena la siguiente información</string>
+    <string name="name_hint">Nombre</string>
+    <string name="save_text">Guardar</string>
+    <string name="phone_text">Número de teléfono</string>
+    <string name="mail_text">Correo electrónico</string>
+    <string name="name_text">Nombre</string>
+    <string name="confirm_text">Confirma tu información</string>
+    <string name="confirm_nombre_text">Nombre:</string>
+    <string name="share_text">Compartir</string>
+</resources>
