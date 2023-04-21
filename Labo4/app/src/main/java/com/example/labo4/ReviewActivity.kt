@@ -50,7 +50,7 @@ class ReviewActivity : AppCompatActivity() {
         shareButton.setOnClickListener {
             val share = Intent(Intent.ACTION_SEND)
             share.setType("text/plain")
-            share.putExtra(Intent.EXTRA_TEXT,"Compartir información: Nombre: $nombre, Correo: $correo, Telefono: $telefono")
+            share.putExtra(Intent.EXTRA_TEXT,"Información compartida: Nombre: $nombre, Correo: $correo, Telefono: $telefono")
             startActivity(Intent.createChooser(share,"Nombre: $nombre, Correo: $correo, Telefono: $telefono"))
         }
     }
