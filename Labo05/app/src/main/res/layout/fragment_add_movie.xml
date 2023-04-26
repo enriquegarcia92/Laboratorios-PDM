@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddMovieFragment"
+    tools:context=".ui.AddMovieFragment"
     android:background="@color/backgroundLayout">
 
     <TextView
@@ -38,6 +38,7 @@
             android:id="@+id/name_edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:background="@color/cardLayout" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -60,7 +61,9 @@
             android:id="@+id/category_edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/cardLayout" />
+            android:background="@color/cardLayout"
+            android:textColor="@color/white"
+            />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -82,7 +85,9 @@
             android:id="@+id/desc_edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/cardLayout" />
+            android:background="@color/cardLayout"
+            android:textColor="@color/white"
+            />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -104,12 +109,14 @@
             android:id="@+id/score_edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/cardLayout" />
+            android:background="@color/cardLayout"
+            android:textColor="@color/white"
+            />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/submit_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/default_gap"

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MoviesFragment"
+    tools:context=".ui.MoviesFragment"
     android:background="@color/backgroundLayout">
 
     <TextView
@@ -145,6 +145,7 @@
         android:layout_marginEnd="@dimen/default_gap"
         android:layout_marginBottom="@dimen/default_gap"
         android:clickable="true"
+        android:focusable="true"
         android:src="@android:drawable/ic_menu_add"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
