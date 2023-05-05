@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="viewmodel"
+            type="com.example.labo05.ui.MovieViewModel" />
+    </data>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MoviesFragment"
+    android:background="@color/backgroundLayout">
+
+    <TextView
+        android:id="@+id/bilboard_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_gap"
+        android:text="@string/bilboard_text"
+        android:textColor="@color/white"
+        android:textSize="@dimen/Titple_Screen_Size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textStyle="bold"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/first_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_gap"
+        android:layout_marginTop="@dimen/default_gap"
+        android:layout_marginEnd="@dimen/default_gap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bilboard_text_view"
+        android:backgroundTint="@color/cardLayout"
+        app:cardCornerRadius="@dimen/default_radious">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/star_wars_image"
+                android:layout_width="@dimen/pick_default"
+                android:layout_height="@dimen/pick_height"
+                android:layout_marginStart="@dimen/default_gap"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/star_wars"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/movie_name_text_view1"
+                android:layout_width="@dimen/wrap_dimen"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_gap"
+                android:layout_marginTop="@dimen/default_gap"
+                android:layout_marginEnd="@dimen/default_gap"
+                android:text="@string/star_wars_text"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/star_wars_image"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/grade_text_view"
+                android:layout_width="@dimen/wrap_dimen"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/default_gap"
+                android:layout_marginBottom="16dp"
+                android:text="@string/star_score"
+                android:textColor="@color/calification"
+                android:textSize="@dimen/Titple_Screen_Size"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/movie_name_text_view1"
+                app:layout_constraintTop_toBottomOf="@+id/movie_name_text_view1" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_gap"
+        android:layout_marginTop="@dimen/default_gap"
+        android:layout_marginEnd="@dimen/default_gap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/first_card_view"
+        android:backgroundTint="@color/cardLayout"
+        app:cardCornerRadius="@dimen/default_radious">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/h_potter_image"
+                android:layout_width="@dimen/pick_default"
+                android:layout_height="@dimen/pick_height"
+                android:layout_marginStart="@dimen/default_gap"
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_marginBottom="@dimen/default_margin"
+                android:src="@drawable/harry_potter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_gap"
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_marginEnd="@dimen/default_gap"
+                android:text="@string/potter_text"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/h_potter_image"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/grade2_text_view"
+                android:layout_width="@dimen/wrap_dimen"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/default_gap"
+                android:layout_marginBottom="16dp"
+                android:text="@string/hp_score"
+                android:textColor="@color/calification"
+                android:textSize="@dimen/Titple_Screen_Size"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/default_gap"
+        android:layout_marginBottom="@dimen/default_gap"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@android:drawable/ic_menu_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
