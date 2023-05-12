@@ -1,12 +1,14 @@
 package com.example.labo05.ui.movie.bilboard
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Adapter
 import androidx.cardview.widget.CardView
+import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
@@ -21,14 +23,12 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class MoviesFragment : Fragment() {
 
-    private val movieViewModel: MovieViewModel by viewModels(){
+    private val movieViewModel: MovieViewModel by activityViewModels{
         MovieViewModel.Factory
     }
 
-    private lateinit var binding:FragmentMoviesBinding
+    private lateinit var binding: FragmentMoviesBinding
     private lateinit var adapter: MovieRecyclerViewAdapter
-
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

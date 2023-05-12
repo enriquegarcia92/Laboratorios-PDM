@@ -16,7 +16,6 @@ class MovieViewModel(private val repository: MovieRepository): ViewModel() {
     var qualification = MutableLiveData("")
     var status = MutableLiveData("")
 
-
     fun getMovies() = repository.getMovies()
     private fun addMovies(movie:MovieModel){
         repository.addMovies(movie)
